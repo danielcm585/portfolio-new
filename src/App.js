@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import AboutSection from "./components/AboutSection";
+import Navbar from "./components/Navbar";
+import AchievementSection from './components/AchievementSection';
+import ReactPageScroller from "react-page-scroll";
+import ExperienceSection from './components/ExperienceSection';
+import ProjectSection from './components/ProjectSection';
 
-function App() {
+export default function App() {
+  const [ curSection, setCurSection ] = useState(0);
+
+  const handlePageChange = number => {
+    this.setState({ currentPage: number });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <ReactPageScroller
+        pageOnChange={handlePageChange}
+        customPageNumber={curSection}
+      >
+        <AboutSection />
+        <ExperienceSection />
+        <AchievementSection />
+        <ProjectSection />
+      </ReactPageScroller>
     </div>
   );
 }
-
-export default App;
