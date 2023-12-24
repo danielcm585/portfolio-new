@@ -150,14 +150,15 @@ export default function Carousel({ projects, setIsHidden }) {
               ))
             }
           </ul>
-          <button
-          onClick={() => setIsDetailsVisible((prev) => !prev)}
-          class="mt-4 flex items-center right-6 bottom-6 py-2 px-4 bg-gray-50 rounded-full shadow-xl hover:bg-gray-200 duration-100"
-          style={{ zIndex: 110 }}
-        >
-          Visit site
-          <FaExternalLinkAlt class="ml-2" />
-        </button>
+          <a
+            href={projects[curIndex].url}
+            target="_blank"
+            style={{ zIndex: 110 }}
+            class=" w-full mt-4 flex justify-center items-center py-2 px-4 bg-gray-50 rounded-full shadow-xl hover:bg-gray-200 duration-100"
+          >
+            Visit site
+            <FaExternalLinkAlt class="ml-2" />
+          </a>
         </div>
       </Modal>
     </>
