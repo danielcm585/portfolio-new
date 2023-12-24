@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import AboutSection from "./components/AboutSection";
 import Navbar from "./components/Navbar";
 import AchievementSection from './components/AchievementSection';
@@ -7,6 +7,10 @@ import ExperienceSection from './components/ExperienceSection';
 import ProjectSection from './components/ProjectSection';
 
 export default function App() {
+  useEffect(() => {
+    document.title = "Daniel Christian Mandolang"
+  }, [])
+
   const [ curSection, setCurSection ] = useState(0);
 
   const handlePageChange = (number) => {

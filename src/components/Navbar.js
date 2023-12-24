@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <div class="py-4 w-full flex justify-center fixed" style={{ zIndex: 100 }}>
-      <div class="lg:w-[70%] w-[80%] flex justify-between items-center">
+      <div class="lg:w-[70%] w-[85%] flex justify-between items-center">
         <p class="font-semibold md:text-3xl text-2xl">Daniel C.M.</p>
         <div>
           <button onClick={showMenu} class="sm:hidden block">
@@ -74,7 +74,7 @@ export default function Navbar() {
           </div>
         </div>
         <div class={`${isMenuVisible ? 'opacity-100' : 'opacity-0'} flex absolute justify-center top-16 left-0 bg-gray-50 p-2 w-full duration-500 ease-in-out transition-opacity`}>
-          <div class="w-[80%]"> 
+          <div class="w-[85%]"> 
             <button 
               disabled={!isMenuVisible}
               onClick={() => {
