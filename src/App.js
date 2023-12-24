@@ -9,8 +9,8 @@ import ProjectSection from './components/ProjectSection';
 export default function App() {
   const [ curSection, setCurSection ] = useState(0);
 
-  const handlePageChange = number => {
-    this.setState({ currentPage: number });
+  const handlePageChange = (number) => {
+    setCurSection(number);
   };
 
   return (
@@ -23,7 +23,7 @@ export default function App() {
         <AboutSection />
         <ExperienceSection />
         <AchievementSection />
-        <ProjectSection />
+        <ProjectSection curSection={curSection} />
       </ReactPageScroller>
     </div>
   );

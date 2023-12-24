@@ -62,7 +62,7 @@ export default function Navbar() {
             >
               <SiCodeforces />
             </button>
-            <div class="h-[full] w-[2px]"></div>
+            {/* <div class="h-[full] w-[2px]"></div>
             <button 
               onClick={toggleTheme} 
               class="rounded-full bg-gray-100 p-3 shadow-xl hover:bg-gray-200 duration-100"
@@ -70,7 +70,7 @@ export default function Navbar() {
               {
                 theme === 'light' ? <FaMoon /> : <FaSun />
               }
-            </button>
+            </button> */}
           </div>
         </div>
         <div class={`${isMenuVisible ? 'opacity-100' : 'opacity-0'} flex absolute justify-center top-16 left-0 bg-gray-50 p-2 w-full duration-500 ease-in-out transition-opacity`}>
@@ -146,7 +146,7 @@ export default function Navbar() {
               </div>
             </button>
             <div class="h-[full] w-[2px]"></div>
-            <button 
+            {/* <button 
               disabled={!isMenuVisible}
               onClick={toggleTheme} 
               class="mt-4 w-full bg-white hover:bg-gray-100 p-2 rounded-md duration-100"
@@ -159,7 +159,7 @@ export default function Navbar() {
                   {theme === 'light' ? 'Dark mode' : 'Light mode'}
                 </p>
               </div>
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

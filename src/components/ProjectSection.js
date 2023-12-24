@@ -1,15 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Carousel from "./Carousel";
-import ProjectDetails from "./ProjectDetails";
 import { projects } from '../assets/data/projects';
 
-export default function ProjectSection() {
-  const [ isHidden, setIsHidden ] = useState(Array.from({ length: projects.length }, () => true));
-
-  useEffect(() => {
-    console.log(isHidden);
-  }, [ isHidden ])
-
+export default function ProjectSection({ curSection }) {
   return (
     <div class="relative">
       <div class="w-screen h-screen flex items-center">
@@ -19,26 +12,11 @@ export default function ProjectSection() {
               Projects
             </p>
             <div class="flex justify-center w-full relative">
-              <Carousel projects={projects} setIsHidden={setIsHidden} class="hover" />
+              <Carousel projects={projects} class="hover" />
             </div>
           </div>
         </div>
       </div>
-      {
-        projects && projects.map((project, index) => (
-          <ProjectDetails 
-            projects={project} 
-            isHidden={isHidden[index]} 
-            setIsHidden={(newVal) => {
-              setIsHidden((prev) => {
-                const next = [...prev]
-                next[index] = newVal;
-                return next;
-              })
-            }} 
-          />
-        ))
-      }
     </div>
   )
 }
