@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import Carousel from "./Carousel";
 import { projects } from '../assets/data/projects';
 
