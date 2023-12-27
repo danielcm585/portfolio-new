@@ -2,9 +2,10 @@ export const projects = [
   {
     title: 'KalvariKu',
     url: 'https://www.gbikalvari.com',
-    description: 'A mobile and web application designed to manage church communities, serving over 100 clients.',
+    description: 'A mobile and web application designed to manage church communities with real time chatting, serving over 100 clients.',
     contributions: [
       'Implement API endpoints that are effective and efficient.',
+      'Use socket.io to enable real time chat.',
       'Build a responsive website using React.js.',
       'Build a mobile app in both Android and iOS using React Native.',
     ],
