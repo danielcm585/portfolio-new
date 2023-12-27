@@ -14,7 +14,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className="py-4 w-full flex justify-center fixed" style={{ zIndex: 100 }}>
+    <div className="py-4 w-full flex justify-center fixed bg-gray-50" style={{ zIndex: 100 }}>
       <div className="lg:w-[70%] w-[85%] flex justify-between items-center">
         <p className="font-semibold md:text-3xl text-2xl">Daniel C.M.</p>
         <div>
