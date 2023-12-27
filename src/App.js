@@ -21,7 +21,7 @@ export default function App() {
   };
 
   return (
-    <div>
+    <div class="bg-gray-50">
       <Navbar />
       {/* <ReactPageScroller
         pageOnChange={handlePageChange}
