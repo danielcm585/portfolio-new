@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { SiWhatsapp, SiGithub, SiLinkedin, SiCodeforces, SiGmail } from "react-icons/si"
+import { SiWhatsapp, SiGithub, SiLinkedin, SiCodeforces, SiGmail, SiDocker } from "react-icons/si"
 import { FaSun, FaMoon } from "react-icons/fa"
 import { MdMenu } from "react-icons/md"
 import { themeContext } from "../contexts/themeContext"
@@ -22,6 +22,17 @@ export default function Navbar() {
             <MdMenu className="w-[25px] h-[25px]" />
           </button>
           <div className="sm:flex hidden space-x-2">
+            <button 
+              onClick={() => {
+                window.open('https://api.whatsapp.com/send/?phone=6281313233290&text&type=phone_number&app_absent=0', '_blank');
+              }} 
+              className="rounded-full bg-gray-100 p-3 shadow-xl hover:bg-gray-200 duration-100"
+              >
+              <div class="flex items-center">
+                <SiDocker />
+                My CV
+              </div>
+            </button>
             <button 
               onClick={() => {
                 window.open('https://api.whatsapp.com/send/?phone=6281313233290&text&type=phone_number&app_absent=0', '_blank');
