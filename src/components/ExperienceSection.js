@@ -13,6 +13,29 @@ export default function ExperienceSection() {
             Experiences
           </p>
           <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2">
+            <p className="sm:text-lg font-semibold">Jan 2024 - Apr 2024</p>
+            <div>
+              <p className="sm:text-lg font-bold">[Gradient] Software Engineer Intern</p>
+              <div>
+                <p>Working on{" "}
+                  <a href="https://gradient.academy/" target="blank" className="hover:underline inline-flex items-center text-blue-500">
+                    Gradient Academy
+                    <FaExternalLinkAlt className="ml-1" />
+                  </a> 
+                  , a web-based platform serving over 27000 students in Indonesia and{" "}
+                  <a href="https://cms-dev.gradient.academy/" target="blank" className="hover:underline inline-flex items-center text-blue-500">
+                    Gradient Academy CMS
+                    <FaExternalLinkAlt className="ml-1" />
+                  </a>
+                  , an internal tools for creating awesome learning modules.
+                </p>
+                <ul className="list-disc ml-6">
+                  <li>Improve the watching history API in Django, that gives more insights.</li>
+                  <li>Revamped the class list and onboarding data UI using Next.js.</li>
+                  <li>Develop system design for content release management.</li>
+                </ul>
+              </div>
+            </div>
             <p className="sm:text-lg font-semibold">Mar 2023 - Present</p>
             <div>
               <p className="sm:sm:text-lg font-bold">[Kokocoder] Freelance Software Engineer</p>
