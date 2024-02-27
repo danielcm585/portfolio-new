@@ -13,7 +13,7 @@ export default function AboutSection() {
               Daniel Christian Mandolang
             </p>
             <p className="lg:text-2xl">
-              I am a software engineer engaged in numerous projects, successfully serving over 200 satisfied clients across Indonesia for various companies. As a competitive programmer, I excel in problem-solving, data structures, and algorithms. Additionally, I take pride in coaching, with a keen interest in training high school and computer science students.
+              I am a software engineer engaged in numerous projects, successfully serving over 27000 satisfied clients across Indonesia for various companies. As a competitive programmer, I excel in problem-solving, data structures, and algorithms. Additionally, I take pride in coaching, with a keen interest in training high school and computer science students.
             </p>
           </div>
         </div>
