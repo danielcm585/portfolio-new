@@ -13,7 +13,7 @@ export default function ExperienceSection() {
             Experiences
           </p>
           <div className="grid sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-2">
-            <p className="sm:text-lg font-semibold">Jan 2024 - Apr 2024</p>
+            <p className="sm:text-lg font-semibold">Jan 2024 - May 2024</p>
             <div>
               <p className="sm:text-lg font-bold">[Gradient] Software Engineer Intern</p>
               <div>
@@ -33,6 +33,23 @@ export default function ExperienceSection() {
                   <li>Improve the watching history API in Django, that gives more insights.</li>
                   <li>Revamped the class list and onboarding data UI using Next.js.</li>
                   <li>Develop system design for content release management.</li>
+                </ul>
+              </div>
+            </div>
+            <p className="sm:text-lg font-semibold">Jan 2024 - Jun 2024</p>
+            <div>
+              <p className="sm:text-lg font-bold">[Universitas Indonesia] Software Engineer</p>
+              <div>
+                <p>Working on{" "}
+                  <a href="https://kayu-mti.cs.ui.ac.id/" target="blank" className="hover:underline inline-flex items-center text-blue-500">
+                    SIKAYU
+                    <FaExternalLinkAlt className="ml-1" />
+                  </a> 
+                  , a platform to help academic staff validate student’s graduation requirements.
+                </p>
+                <ul className="list-disc ml-6">
+                  <li>Lead and manage a team of engineers to develop high quality features.</li>
+                  <li>Using redis and celery worker to implement async tasks.</li>
                 </ul>
               </div>
             </div>
