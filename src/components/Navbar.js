@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="sm:flex hidden space-x-2">
             <button 
               onClick={() => {
-                window.open('https://drive.google.com/file/d/1TI9svWHgYWgLljiIeNvKapeuFtNZDFxC/view?usp=sharing', '_blank');
+                window.open('https://drive.google.com/file/d/1KGxE21oh8Zm4Xvv-Sg90UDWSZTpk-VIU/view?usp=sharing', '_blank');
               }} 
               className="rounded-full bg-gray-100 p-3 shadow-xl hover:bg-gray-200 duration-100"
               >
